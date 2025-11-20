@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             panel1 = new Panel();
             cbGender = new ComboBox();
             cbProgram = new ComboBox();
@@ -77,120 +79,134 @@
             // 
             // cbGender
             // 
+            cbGender.Font = new Font("Bahnschrift", 12F);
             cbGender.FormattingEnabled = true;
             cbGender.Location = new Point(227, 169);
             cbGender.Name = "cbGender";
-            cbGender.Size = new Size(173, 23);
+            cbGender.Size = new Size(173, 27);
             cbGender.TabIndex = 3;
             // 
             // cbProgram
             // 
+            cbProgram.Font = new Font("Bahnschrift", 12F);
             cbProgram.FormattingEnabled = true;
             cbProgram.Location = new Point(425, 41);
             cbProgram.Name = "cbProgram";
-            cbProgram.Size = new Size(218, 23);
+            cbProgram.Size = new Size(218, 27);
             cbProgram.TabIndex = 3;
             // 
             // txtMiddleName
             // 
             txtMiddleName.BorderStyle = BorderStyle.FixedSingle;
+            txtMiddleName.Font = new Font("Bahnschrift", 12F);
             txtMiddleName.Location = new Point(425, 107);
             txtMiddleName.Name = "txtMiddleName";
-            txtMiddleName.Size = new Size(144, 23);
+            txtMiddleName.Size = new Size(144, 27);
             txtMiddleName.TabIndex = 2;
             // 
             // txtAge
             // 
             txtAge.BorderStyle = BorderStyle.FixedSingle;
+            txtAge.Font = new Font("Bahnschrift", 12F);
             txtAge.Location = new Point(17, 170);
             txtAge.Name = "txtAge";
-            txtAge.Size = new Size(100, 23);
+            txtAge.Size = new Size(100, 27);
             txtAge.TabIndex = 2;
             // 
             // txtFirstName
             // 
             txtFirstName.BorderStyle = BorderStyle.FixedSingle;
+            txtFirstName.Font = new Font("Bahnschrift", 12F);
             txtFirstName.Location = new Point(227, 107);
             txtFirstName.Name = "txtFirstName";
-            txtFirstName.Size = new Size(173, 23);
+            txtFirstName.Size = new Size(173, 27);
             txtFirstName.TabIndex = 2;
             // 
             // txtLastName
             // 
             txtLastName.BorderStyle = BorderStyle.FixedSingle;
+            txtLastName.Font = new Font("Bahnschrift", 12F);
             txtLastName.Location = new Point(17, 107);
             txtLastName.Name = "txtLastName";
-            txtLastName.Size = new Size(182, 23);
+            txtLastName.Size = new Size(182, 27);
             txtLastName.TabIndex = 2;
             // 
             // txtStudentID
             // 
             txtStudentID.BorderStyle = BorderStyle.FixedSingle;
+            txtStudentID.Font = new Font("Bahnschrift", 12F);
             txtStudentID.Location = new Point(17, 41);
             txtStudentID.Name = "txtStudentID";
-            txtStudentID.Size = new Size(182, 23);
+            txtStudentID.Size = new Size(182, 27);
             txtStudentID.TabIndex = 2;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(17, 152);
+            label3.Font = new Font("Bahnschrift", 12F, FontStyle.Bold);
+            label3.Location = new Point(17, 148);
             label3.Name = "label3";
-            label3.Size = new Size(31, 15);
+            label3.Size = new Size(41, 19);
             label3.TabIndex = 1;
             label3.Text = "Age:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(227, 152);
+            label5.Font = new Font("Bahnschrift", 12F, FontStyle.Bold);
+            label5.Location = new Point(227, 147);
             label5.Name = "label5";
-            label5.Size = new Size(48, 15);
+            label5.Size = new Size(65, 19);
             label5.TabIndex = 1;
             label5.Text = "Gender:";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(425, 89);
+            label7.Font = new Font("Bahnschrift", 12F, FontStyle.Bold);
+            label7.Location = new Point(425, 85);
             label7.Name = "label7";
-            label7.Size = new Size(80, 15);
+            label7.Size = new Size(106, 19);
             label7.TabIndex = 1;
             label7.Text = "Middle name:";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(425, 23);
+            label6.Font = new Font("Bahnschrift", 12F, FontStyle.Bold);
+            label6.Location = new Point(425, 19);
             label6.Name = "label6";
-            label6.Size = new Size(56, 15);
+            label6.Size = new Size(78, 19);
             label6.TabIndex = 1;
             label6.Text = "Program:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(227, 89);
+            label4.Font = new Font("Bahnschrift", 12F, FontStyle.Bold);
+            label4.Location = new Point(227, 85);
             label4.Name = "label4";
-            label4.Size = new Size(65, 15);
+            label4.Size = new Size(91, 19);
             label4.TabIndex = 1;
             label4.Text = "First name:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(17, 89);
+            label2.Font = new Font("Bahnschrift", 12F, FontStyle.Bold);
+            label2.Location = new Point(17, 85);
             label2.Name = "label2";
-            label2.Size = new Size(64, 15);
+            label2.Size = new Size(89, 19);
             label2.TabIndex = 1;
             label2.Text = "Last name:";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(17, 23);
+            label1.Font = new Font("Bahnschrift", 12F, FontStyle.Bold);
+            label1.Location = new Point(17, 19);
             label1.Name = "label1";
-            label1.Size = new Size(65, 15);
+            label1.Size = new Size(88, 19);
             label1.TabIndex = 0;
             label1.Text = "Student ID:";
             // 
@@ -205,53 +221,94 @@
             // 
             // dataGridView1
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AllowUserToResizeColumns = false;
+            dataGridView1.AllowUserToResizeRows = false;
+            dataGridView1.BackgroundColor = Color.Cornsilk;
+            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = Color.SaddleBrown;
+            dataGridViewCellStyle3.Font = new Font("Bahnschrift SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.SelectionBackColor = Color.SaddleBrown;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.ButtonHighlight;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridView1.ColumnHeadersHeight = 20;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = Color.Bisque;
+            dataGridViewCellStyle4.Font = new Font("Bahnschrift", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = Color.Bisque;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.GridColor = Color.SaddleBrown;
             dataGridView1.Location = new Point(17, 18);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(645, 162);
             dataGridView1.TabIndex = 0;
             // 
             // button3
             // 
+            button3.BackColor = Color.SaddleBrown;
             button3.Cursor = Cursors.Hand;
-            button3.FlatStyle = FlatStyle.Flat;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.Font = new Font("Bahnschrift", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button3.ForeColor = SystemColors.ButtonHighlight;
             button3.Location = new Point(676, 18);
             button3.Name = "button3";
-            button3.Size = new Size(100, 38);
+            button3.Size = new Size(100, 55);
             button3.TabIndex = 2;
             button3.Text = "Refresh";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += btnRefresh_Click;
             // 
             // button1
             // 
+            button1.BackColor = Color.SaddleBrown;
             button1.Cursor = Cursors.Hand;
-            button1.FlatStyle = FlatStyle.Flat;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Bahnschrift", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ButtonHighlight;
             button1.Location = new Point(688, 12);
             button1.Name = "button1";
-            button1.Size = new Size(100, 36);
+            button1.Size = new Size(100, 50);
             button1.TabIndex = 2;
             button1.Text = "Register";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += btnRegister_Click;
             // 
             // button2
             // 
+            button2.BackColor = Color.SaddleBrown;
             button2.Cursor = Cursors.Hand;
-            button2.FlatStyle = FlatStyle.Flat;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Bahnschrift", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.ForeColor = SystemColors.ButtonHighlight;
             button2.Location = new Point(688, 68);
             button2.Name = "button2";
-            button2.Size = new Size(100, 38);
+            button2.Size = new Size(100, 48);
             button2.TabIndex = 2;
             button2.Text = "Update";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += btnUpdate_Click;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(39, 235);
+            label8.Font = new Font("Bahnschrift", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.Location = new Point(39, 233);
             label8.Name = "label8";
-            label8.Size = new Size(122, 15);
+            label8.Size = new Size(163, 19);
             label8.TabIndex = 0;
             label8.Text = "List Of Club Members";
             // 
@@ -259,6 +316,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.PeachPuff;
             ClientSize = new Size(800, 450);
             Controls.Add(label8);
             Controls.Add(button2);

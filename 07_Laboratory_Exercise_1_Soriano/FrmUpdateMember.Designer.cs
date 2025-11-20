@@ -35,158 +35,179 @@
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            comboBox3 = new ComboBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            cbStudentID = new ComboBox();
+            cbGender = new ComboBox();
+            cbProgram = new ComboBox();
+            txtLastName = new TextBox();
+            txtFirstName = new TextBox();
+            txtMiddleName = new TextBox();
+            txtAge = new TextBox();
             button1 = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(18, 16);
+            label1.Font = new Font("Bahnschrift", 12F, FontStyle.Bold);
+            label1.Location = new Point(18, 12);
             label1.Name = "label1";
-            label1.Size = new Size(65, 15);
+            label1.Size = new Size(88, 19);
             label1.TabIndex = 0;
             label1.Text = "Student ID:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(19, 72);
+            label2.Font = new Font("Bahnschrift", 12F, FontStyle.Bold);
+            label2.Location = new Point(18, 68);
             label2.Name = "label2";
-            label2.Size = new Size(64, 15);
+            label2.Size = new Size(89, 19);
             label2.TabIndex = 1;
             label2.Text = "Last name:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(18, 136);
+            label3.Font = new Font("Bahnschrift", 12F, FontStyle.Bold);
+            label3.Location = new Point(19, 132);
             label3.Name = "label3";
-            label3.Size = new Size(65, 15);
+            label3.Size = new Size(91, 19);
             label3.TabIndex = 1;
             label3.Text = "First name:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(18, 201);
+            label4.Font = new Font("Bahnschrift", 12F, FontStyle.Bold);
+            label4.Location = new Point(17, 197);
             label4.Name = "label4";
-            label4.Size = new Size(80, 15);
+            label4.Size = new Size(106, 19);
             label4.TabIndex = 1;
             label4.Text = "Middle name:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(19, 263);
+            label5.Font = new Font("Bahnschrift", 12F, FontStyle.Bold);
+            label5.Location = new Point(19, 259);
             label5.Name = "label5";
-            label5.Size = new Size(31, 15);
+            label5.Size = new Size(41, 19);
             label5.TabIndex = 1;
             label5.Text = "Age:";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(19, 329);
+            label6.Font = new Font("Bahnschrift", 12F, FontStyle.Bold);
+            label6.Location = new Point(19, 325);
             label6.Name = "label6";
-            label6.Size = new Size(48, 15);
+            label6.Size = new Size(65, 19);
             label6.TabIndex = 1;
             label6.Text = "Gender:";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(19, 397);
+            label7.Font = new Font("Bahnschrift", 12F, FontStyle.Bold);
+            label7.Location = new Point(19, 393);
             label7.Name = "label7";
-            label7.Size = new Size(56, 15);
+            label7.Size = new Size(78, 19);
             label7.TabIndex = 1;
             label7.Text = "Program:";
             // 
-            // comboBox1
+            // cbStudentID
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(19, 34);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(244, 23);
-            comboBox1.TabIndex = 2;
+            cbStudentID.Font = new Font("Bahnschrift", 12F);
+            cbStudentID.FormattingEnabled = true;
+            cbStudentID.Location = new Point(19, 34);
+            cbStudentID.Name = "cbStudentID";
+            cbStudentID.Size = new Size(244, 27);
+            cbStudentID.TabIndex = 2;
+            cbStudentID.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
-            // comboBox2
+            // cbGender
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(19, 347);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(185, 23);
-            comboBox2.TabIndex = 2;
+            cbGender.Font = new Font("Bahnschrift", 12F);
+            cbGender.FormattingEnabled = true;
+            cbGender.Location = new Point(19, 347);
+            cbGender.Name = "cbGender";
+            cbGender.Size = new Size(185, 27);
+            cbGender.TabIndex = 2;
             // 
-            // comboBox3
+            // cbProgram
             // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(19, 415);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(234, 23);
-            comboBox3.TabIndex = 2;
+            cbProgram.Font = new Font("Bahnschrift", 12F);
+            cbProgram.FormattingEnabled = true;
+            cbProgram.Location = new Point(19, 415);
+            cbProgram.Name = "cbProgram";
+            cbProgram.Size = new Size(244, 27);
+            cbProgram.TabIndex = 2;
             // 
-            // textBox1
+            // txtLastName
             // 
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Location = new Point(19, 90);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(185, 23);
-            textBox1.TabIndex = 3;
+            txtLastName.BorderStyle = BorderStyle.FixedSingle;
+            txtLastName.Font = new Font("Bahnschrift", 12F);
+            txtLastName.Location = new Point(19, 90);
+            txtLastName.Name = "txtLastName";
+            txtLastName.Size = new Size(185, 27);
+            txtLastName.TabIndex = 3;
             // 
-            // textBox2
+            // txtFirstName
             // 
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Location = new Point(19, 154);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(185, 23);
-            textBox2.TabIndex = 3;
+            txtFirstName.BorderStyle = BorderStyle.FixedSingle;
+            txtFirstName.Font = new Font("Bahnschrift", 12F);
+            txtFirstName.Location = new Point(19, 154);
+            txtFirstName.Name = "txtFirstName";
+            txtFirstName.Size = new Size(185, 27);
+            txtFirstName.TabIndex = 3;
             // 
-            // textBox3
+            // txtMiddleName
             // 
-            textBox3.BorderStyle = BorderStyle.FixedSingle;
-            textBox3.Location = new Point(19, 219);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(185, 23);
-            textBox3.TabIndex = 3;
+            txtMiddleName.BorderStyle = BorderStyle.FixedSingle;
+            txtMiddleName.Font = new Font("Bahnschrift", 12F);
+            txtMiddleName.Location = new Point(19, 219);
+            txtMiddleName.Name = "txtMiddleName";
+            txtMiddleName.Size = new Size(185, 27);
+            txtMiddleName.TabIndex = 3;
             // 
-            // textBox4
+            // txtAge
             // 
-            textBox4.BorderStyle = BorderStyle.FixedSingle;
-            textBox4.Location = new Point(19, 281);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(96, 23);
-            textBox4.TabIndex = 3;
+            txtAge.BorderStyle = BorderStyle.FixedSingle;
+            txtAge.Font = new Font("Bahnschrift", 12F);
+            txtAge.Location = new Point(19, 281);
+            txtAge.Name = "txtAge";
+            txtAge.Size = new Size(96, 27);
+            txtAge.TabIndex = 3;
             // 
             // button1
             // 
+            button1.BackColor = Color.SaddleBrown;
+            button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(93, 458);
+            button1.Font = new Font("Bahnschrift", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(19, 458);
             button1.Name = "button1";
-            button1.Size = new Size(103, 30);
+            button1.Size = new Size(244, 37);
             button1.TabIndex = 4;
             button1.Text = "Confirm";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += btnConfirm_Click;
             // 
             // FrmUpdateMember
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(288, 500);
+            BackColor = Color.Bisque;
+            ClientSize = new Size(288, 515);
             Controls.Add(button1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(comboBox3);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
+            Controls.Add(txtAge);
+            Controls.Add(txtMiddleName);
+            Controls.Add(txtFirstName);
+            Controls.Add(txtLastName);
+            Controls.Add(cbProgram);
+            Controls.Add(cbGender);
+            Controls.Add(cbStudentID);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -196,6 +217,7 @@
             Controls.Add(label1);
             Name = "FrmUpdateMember";
             Text = "FrmUpdateMember";
+            Load += FrmUpdateMember_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -209,13 +231,13 @@
         private Label label5;
         private Label label6;
         private Label label7;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private ComboBox comboBox3;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private ComboBox cbStudentID;
+        private ComboBox cbGender;
+        private ComboBox cbProgram;
+        private TextBox txtLastName;
+        private TextBox txtFirstName;
+        private TextBox txtMiddleName;
+        private TextBox txtAge;
         private Button button1;
     }
 }

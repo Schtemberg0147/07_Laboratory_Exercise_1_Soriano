@@ -6,11 +6,12 @@ namespace _07_Laboratory_Exercise_1_Soriano
         int ID, Age, count;
         string FirstName, MiddleName, LastName, Gender, Program;
         long StudentID;
-        string[] Genders = {"Male", "Female"};
+        string[] Genders = { "Male", "Female" };
         string[] Programs = { "BSIT", "BSCS", "BSIS", "BSSE", "BSECE" };
         public FrmClubRegistration()
         {
             InitializeComponent();
+            clubRegistrationQuery = new ClubRegistrationQuery();
         }
 
         public void RefreshListOfClubMembers()
@@ -25,7 +26,8 @@ namespace _07_Laboratory_Exercise_1_Soriano
             {
                 cbProgram.Items.Add(Program);
             }
-            foreach (string Gender in Genders) {
+            foreach (string Gender in Genders)
+            {
                 cbGender.Items.Add(Gender);
             }
             RefreshListOfClubMembers();
@@ -33,8 +35,8 @@ namespace _07_Laboratory_Exercise_1_Soriano
 
         public int RegistrationID()
         {
-            count += 1;
-            return count;
+            this.count += 1;
+            return this.count;
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
@@ -48,6 +50,7 @@ namespace _07_Laboratory_Exercise_1_Soriano
             Gender = cbGender.Text;
             Program = cbProgram.Text;
             clubRegistrationQuery.RegisterStudent(ID, StudentID, FirstName, MiddleName, LastName, Age, Gender, Program);
+            MessageBox.Show("Registration Success!");
             RefreshListOfClubMembers();
         }
 
@@ -56,5 +59,13 @@ namespace _07_Laboratory_Exercise_1_Soriano
             //Refresh the datagridview when the button is clicked
             RefreshListOfClubMembers();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            FrmUpdateMember frmUpdateMember = new FrmUpdateMember();
+            frmUpdateMember.Show();
+        }
+
+        
     }
 }

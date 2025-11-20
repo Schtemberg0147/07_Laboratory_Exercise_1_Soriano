@@ -20,9 +20,10 @@ namespace _07_Laboratory_Exercise_1_Soriano
         private string connectionString;
         public string _FirstName, _LastName, _Gender, _MiddleName, _Program;
         public int _Age;
+        public string[] studentIDs = new string[99];
         public ClubRegistrationQuery()
         {
-            connectionString = "Data Source=LAB-A-PC00;Initial Catalog=ClubDB_Soriano;Integrated Security=True;User ID=soriano.j;Password=12345;";
+            connectionString = "Data Source=localhost;Initial Catalog=ClubDB;Trusted_Connection=True;TrustServerCertificate=True;";
             sqlConnect = new SqlConnection(connectionString);
             dataTable = new DataTable();
             bindingSource = new BindingSource();
@@ -30,7 +31,7 @@ namespace _07_Laboratory_Exercise_1_Soriano
 
         public bool DisplayList()
         {
-            string ViewClubMembers = "SELECT StudentId, FirstName, MiddleName, LastName, Age, Gender, Program FROM ClubDB_Soriano";
+            string ViewClubMembers = "SELECT StudentId, FirstName, MiddleName, LastName, Age, Gender, Program FROM ClubMembers;";
             sqlAdapter = new SqlDataAdapter(ViewClubMembers, connectionString);
             dataTable.Clear();
             sqlAdapter.Fill(dataTable);
@@ -55,5 +56,20 @@ namespace _07_Laboratory_Exercise_1_Soriano
             return true;
         }
 
+        public bool UpdateStudent(string StudentID, string FirstName, string MiddleName, string LastName, int Age, string Gender, string Program)
+        {   
+            string query = "UPDATE ClubMembers SET LastName = @lastName, FirstName = @firstName, MiddleName = @middleName, Age = @age, Gender = @gender, Program = @program WHERE StudentId = @studentID";
+            sqlCommand = new SqlCommand(query, sqlConnect);
+            sqlCommand.Parameters.Add("@firstName", SqlDbType.VarChar).Value = FirstName;
+            sqlCommand.Parameters.Add("@middleName", SqlDbType.VarChar).Value = MiddleName;
+            sqlCommand.Parameters.Add("@lastName", SqlDbType.VarChar).Value = LastName;
+            sqlCommand.Parameters.Add("@age", SqlDbType.Int).Value = Age;
+            sqlCommand.Parameters.Add("@gender", SqlDbType.VarChar).Value = Gender;
+            sqlCommand.Parameters.Add("@program", SqlDbType.VarChar).Value = Program;
+            sqlCommand.Parameters.Add("@studentID", SqlDbType.VarChar).Value = StudentID;
+
+            sqlConnect.Open(); sqlCommand.ExecuteNonQuery(); sqlConnect.Close();
+            return true;
+        }
     }
 }
